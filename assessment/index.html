@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission 2 Assessment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <div id="stars" class="stars" aria-hidden="true"></div>
+
+    <section id="screen-title" class="screen screen-title is-on">
+      <button id="back-lessons" class="pix-btn back-lessons" type="button">◀ BACK</button>
+      <div class="title-art">
+        <div class="title-png-wrap">
+          <img id="title-png" class="title-png" alt="Mission 2: Commission, Piecework, and Allowance" />
+        </div>
+        <h1 class="assess-word" aria-label="ASSESSMENT">
+          <span>A</span><span>S</span><span>S</span><span>E</span><span>S</span><span>S</span><span>M</span><span>E</span><span>N</span><span>T</span>
+        </h1>
+        <button id="begin" class="continue-pixel" type="button">
+          ▶ CONTINUE ◀
+        </button>
+        <p class="hint">PRESS CONTINUE TO BEGIN</p>
+      </div>
+    </section>
+
+    <section id="screen-part1" class="screen screen-quiz" hidden>
+      <div class="quiz-bg" data-bg="part1"></div>
+      <div class="quiz-wrap">
+        <header class="quiz-head">
+          <h1 class="gold-title">KNOWLEDGE ASSESSMENT</h1>
+          <div class="part-banner">PART 1</div>
+          <p class="sub">Easy — Core Concepts &amp; Basic Formulas (Items 1–5)</p>
+        </header>
+        <div id="grid-1" class="q-grid"></div>
+        <div class="nav-row">
+          <button id="back-1" class="pix-btn" type="button">◀ BACK</button>
+          <button id="next-1" class="pix-btn" type="button">NEXT ▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-part2" class="screen screen-quiz" hidden>
+      <div class="quiz-bg" data-bg="part2"></div>
+      <div class="quiz-wrap">
+        <header class="quiz-head">
+          <h1 class="gold-title">KNOWLEDGE ASSESSMENT</h1>
+          <div class="part-banner">PART 2</div>
+          <p class="sub">Medium &amp; Hard — Applied Equations (Items 6–10)</p>
+        </header>
+        <div id="grid-2" class="q-grid"></div>
+        <p id="score" class="score" hidden></p>
+        <div class="nav-row">
+          <button id="back-2" class="pix-btn" type="button">◀ BACK</button>
+          <button id="submit" class="pix-btn submit" type="button" disabled>SUBMIT ANSWERS</button>
+        </div>
+        <div id="after" class="nav-row after" hidden>
+          <button id="retry" class="pix-btn" type="button">TRY AGAIN</button>
+          <button id="to-title" class="pix-btn" type="button">BACK TO TITLE</button>
+        </div>
+      </div>
+    </section>
+
+    <canvas id="burst" class="burst"></canvas>
+    <div id="veil" class="veil on"></div>
+    <script src="data/questions.js"></script>
+    <script src="app.js?v=3"></script>
+  </body>
+</html>
