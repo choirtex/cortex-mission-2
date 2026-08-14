@@ -2,10 +2,14 @@
 
 Interactive 16-bit lesson and assessment on **commission, piecework (pakyaw), and allowances**.
 
-## Play
+## Play online
 
-- Lessons: open `index.html`
-- Assessment: open `assessment/index.html` (or finish the last lesson and choose **ASSESSMENT**)
+- Lessons: https://choirtex.github.io/cortex-mission-2/
+- Assessment: https://choirtex.github.io/cortex-mission-2/assessment/
+
+Repo: https://github.com/choirtex/cortex-mission-2
+
+## Play locally
 
 Use a local static server (opening the file directly can block image processing):
 
@@ -17,4 +21,4 @@ Then visit http://127.0.0.1:5173/
 
 ## GitHub Pages
 
-This is a static site served from the repository root (`index.html`).
+Static site from the `main` branch root (`index.html`).
